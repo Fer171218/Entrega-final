@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-p {
+nav {
+  background-color: #FFEADD;
+}
+
+.buscador {
+  text-decoration: none;
+  color: #FF6666;
+}
+
+p, footer {
   text-align: center;
   color: #FF6666;
   font-family: "Montserrat", sans-serif;
@@ -8,6 +17,7 @@ p {
   font-weight: 400;
   font-style: normal;
   background-color: #FFEADD;
+  text-decoration: none;
 }
 
 h1, h2, li a {
@@ -17,6 +27,28 @@ h1, h2, li a {
   font-weight: 400;
   font-style: normal;
   background-color: #FFEADD;
+}
+
+@media (max-width: 425px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1px);
+    grid-template-rows: repeat(3, 1px);
+    grid-template-areas: "encabezado navegador" "fotos info" "footer footer";
+  }
+  #svtfoto {
+    width: 350px;
+    height: 250px;
+  }
+  #parrafo {
+    text-align: center;
+  }
+  #carouselExampleIndicators {
+    width: 400px;
+  }
+  .carousel-inner {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
