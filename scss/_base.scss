@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+$paletacolores: #FF6666, #FF8989, #FFEADD;
+p{
+    @extend%parrafoletra
+}
+h1{
+    @extend%parrafoDOS
+}
+h2{
+    @extend%parrafoDOS
+}
+li a{
+    @extend%parrafoDOS
+}
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+%parrafoletra{
+    text-align: center;
+    color: nth($paletacolores,1 );
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: nth($paletacolores,2 )
+}
+%parrafoDOS{
+    text-align: center;
+    color: nth($paletacolores,1 );
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: nth($paletacolores,2 )
+}
